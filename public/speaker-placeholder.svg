@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="450" viewBox="0 0 400 450" fill="none">
+  <rect width="400" height="450" fill="#14532d"/>
+  <!-- Background grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#166534" stroke-width="0.5"/>
+  </pattern>
+  <rect width="400" height="450" fill="url(#grid)"/>
+  <!-- Person silhouette -->
+  <circle cx="200" cy="160" r="65" fill="#166534" stroke="#F4C430" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M 60 430 Q 60 320 200 320 Q 340 320 340 430 Z" fill="#166534" stroke="#F4C430" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Gold accent lines -->
+  <line x1="20" y1="430" x2="380" y2="430" stroke="#F4C430" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Label -->
+  <text x="200" y="400" text-anchor="middle" font-family="monospace" font-size="12" fill="#4ade80" opacity="0.8">[ Speaker Photo ]</text>
+</svg>
