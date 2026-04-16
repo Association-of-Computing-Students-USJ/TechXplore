@@ -1,51 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - TechXplore</title>
+    <title>Register - TechXplore 2.0</title>
+    <meta name="description"
+        content="Register as a participant for TechXplore 2.0 seminars organized by the Association of Computing Students, University of Sri Jayewardenepura.">
     <link rel="icon" type="image/png" href="img/Techxplore 2.0 logo.png">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <!--Navbar-->
-    <header style="background: var(--text-color);">
+    <header>
         <a href="index.html" class="logo">
-            <img src="img/Techxplore 2.0 logo.png" width="120" height="50" alt="">
+            <img src="img/Techxplore 2.0 logo.png" width="120" height="50" alt="TechXplore Logo">
         </a>
-    </header>
-    
-    <!--Registration Form-->
-    <section class="register" id="register">
-        <div class="heading">
-            <h2>> Participant Registration_</h2>
+        <div class="header-icon">
+            <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Site</a>
         </div>
-        <div class="register-form">
-            <form action="#">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="text" placeholder="University / Institution" required>
-                <input type="submit" value="Submit Registration" class="btn">
-            </form>
+    </header>
+
+    <!--Register Hero-->
+    <section class="register-hero">
+        <div class="register-hero-text">
+            <h1>Join TechXplore 2.0</h1>
+            <p>Register now to secure your spot at our upcoming seminar series. Connect with industry experts, gain
+                valuable insights, and kickstart your tech journey.</p>
         </div>
     </section>
 
-    <!--Footer Section-->
+    <!--Registration Form-->
+    <section class="register-section" id="register">
+        <div class="register-wrapper">
+            <!-- Left Info Panel -->
+            <div class="register-info">
+                <h2>Why Register?</h2>
+                <div class="info-item">
+                    <i class='bx bx-check-circle'></i>
+                    <div>
+                        <h4>Industry Experts</h4>
+                        <p>Learn directly from top professionals and thought leaders in the tech industry.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-check-circle'></i>
+                    <div>
+                        <h4>Networking Opportunities</h4>
+                        <p>Connect with fellow students and professionals to expand your network.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-check-circle'></i>
+                    <div>
+                        <h4>Hands-on Learning</h4>
+                        <p>Gain practical skills and knowledge applicable to real-world tech environments.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-check-circle'></i>
+                    <div>
+                        <h4>Certificate of Participation</h4>
+                        <p>Receive an official certificate to boost your academic and professional profile.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="register-form-panel">
+                <div class="form-header">
+                    <h2>Participant Registration</h2>
+                    <p>Fill in your details below to register</p>
+                </div>
+                <form class="register-form-fields" action="#" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="fullname"><i class='bx bx-user'></i> Full Name</label>
+                        <input type="text" id="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class='bx bx-envelope'></i> Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class='bx bx-phone'></i> Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="university"><i class='bx bx-building'></i> University / Institution</label>
+                        <input type="text" id="university" placeholder="Enter your university or institution" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course"><i class='bx bx-book'></i> Course / Degree</label>
+                        <input type="text" id="course" placeholder="Enter your course or degree program" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year"><i class='bx bx-calendar'></i> Year of Study</label>
+                        <select id="year" required>
+                            <option value="" disabled selected>Select your year of study</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn register-submit-btn">
+                        <i class='bx bx-send'></i> Submit Registration
+                    </button>
+                </form>
+
+                <!-- Success Message (hidden by default) -->
+                <div class="success-message" id="successMsg">
+                    <i class='bx bx-check-circle'></i>
+                    <h3>Registration Successful!</h3>
+                    <p>Thank you for registering. We'll contact you soon with further details.</p>
+                    <a href="index.html" class="btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
     <section class="footer">
         <div class="footer-box">
             <h3>TechXplore 2.0</h3>
-            <p>TechXplore 2.0, organized by the Association of Computing Students at the University of Sri Jayewardenepura, is a seminar series that connects students with industry experts. It aims to bridge the gap between academic learning and real-world technology while inspiring innovation and networking.</p>
+            <p>TechXplore 2.0, organized by the Association of Computing Students at the University of Sri
+                Jayewardenepura, is a seminar series that connects students with industry experts.</p>
+            <div class="social">
+                <a href="#"><i class="bxl bx-facebook-circle"></i></a>
+                <a href="#"><i class="bxl bx-instagram"></i></a>
+                <a href="#"><i class="bxl bx-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#session">Sessions</a></li>
+            <li><a href="index.html#team">Our Team</a></li>
         </div>
         <div class="footer-box">
             <h3>Contact</h3>
             <div class="contact">
-                <span><i class="bx bx-location-alt-2"></i>Faculty Of Computing,University Of Sri Jayawardenapura,Gangodawila,Nuguegoda</span>
-                <span><i class="bx bx-phone">+94-71-114-4679</i></span>
-                <span><i class="bx bx-envelope-alt">texhxplore@gmail.com</i></span>
+                <span><i class="bx bx-location-alt-2"></i>Faculty Of Computing, University Of Sri Jayawardenapura,
+                    Gangodawila, Nugegoda</span>
+                <span><i class="bx bx-phone"></i> +94-71-114-4679</span>
+                <span><i class="bx bx-envelope"></i> techxplore@gmail.com</span>
             </div>
         </div>
     </section>
+
+    <script>
+        // Transparent → solid navbar on scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <script>
+        // ============================================================
+        // STEP: Paste your Google Apps Script Web App URL below
+        // ============================================================
+        const SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/1UT7c028j-Pf6j6-dWcDv7XcRU0NyeYoh2FgrWi4pVVk/edit?gid=0#gid=0';
+
+        const form = document.querySelector('.register-form-fields');
+        const successMsg = document.getElementById('successMsg');
+        const submitBtn = document.querySelector('.register-submit-btn');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            // Show loading state on button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "<i class='bx bx-loader-alt bx-spin'></i> Submitting...";
+
+            // Collect form data
+            const data = {
+                fullname: document.getElementById('fullname').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                university: document.getElementById('university').value,
+                course: document.getElementById('course').value,
+                year: document.getElementById('year').value,
+                timestamp: new Date().toLocaleString()
+            };
+
+            try {
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',   // required for Google Apps Script
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                // Show success
+                form.style.display = 'none';
+                successMsg.style.display = 'flex';
+
+            } catch (error) {
+                // Restore button on error
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "<i class='bx bx-send'></i> Submit Registration";
+                alert('Something went wrong. Please check your internet connection and try again.');
+            }
+        });
+    </script>
 </body>
+
 </html>
