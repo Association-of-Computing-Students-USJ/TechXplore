@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "acsusj-web"
+  },
+  "targets": {
+    "acsusj-web": {
+      "hosting": {
+        "techxplore-acsusj": [
+          "techxplore-acsusj"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
