@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,8 +143,7 @@ header.scrolled {
 }
 
 .home-text p {
-    font-size: 0.938rem;
-    font-family: cursive;
+    font-size: 1rem;
     color: var(--bg-color);
     margin: 0.5rem 0 1.4rem;
 }
@@ -179,8 +178,7 @@ header.scrolled {
 }
 
 .about-text p {
-    font-size: 0.938rem;
-    font-family: cursive;
+    font-size: 1rem;
     margin: 0.5rem 0 1.1rem;
 }
 
@@ -223,7 +221,6 @@ header.scrolled {
 
 .product-container .box h3 {
     font-size: 1rem;
-    font-family: Tempus Sans ITC;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0.5rem;
@@ -239,7 +236,6 @@ header.scrolled {
 .product-container .box .content span {
     padding: 0 1rem;
     color: #ffffff;
-    font-family: cursive;
     background: #cdb891;
     border-radius: 4px;
     font-weight: 500;
@@ -249,7 +245,6 @@ header.scrolled {
 .product-container .box .content a {
     border: 2px solid black;
     padding: 0 1rem;
-    font-family: cursive;
     color: #800080;
     border-radius: 4px;
     text-transform: capitalize;
@@ -281,14 +276,12 @@ header.scrolled {
 }
 
 .team-container .box p {
-    font-size: 0.938rem;
-    font-family: cursive;
+    font-size: 1rem;
 
 }
 
 .team-container .box h2 {
     font-size: 1.5rem;
-    font-family: monospace;
     color: #800080;
     font-weight: 600;
     margin: 0.5rem 0 0.5rem;
@@ -311,7 +304,7 @@ header.scrolled {
 }
 
 .team-container .box h3 {
-    font-family: Bradley Hand ITC;
+    font-weight: 500;
     color: #4B371c;
 }
 
@@ -323,15 +316,13 @@ header.scrolled {
 
 .footer-box h3 {
     font-size: 1.2rem;
-    font-family: monospace;
     font-weight: 800;
     margin-bottom: 10px;
     color: #2E1503;
 }
 
 .footer-box p {
-    font-size: 0.938rem;
-    font-family: cursive;
+    font-size: 1rem;
     font-weight: 540;
     margin-bottom: 10px;
 }
@@ -363,7 +354,6 @@ header.scrolled {
 
 .footer-box li a {
     color: var(--text-color);
-    font-family: cursive;
 
 }
 
@@ -379,7 +369,6 @@ header.scrolled {
 }
 
 .contact span {
-    font-family: cursive;
     font-weight: 540;
 }
 
@@ -751,11 +740,11 @@ header.scrolled {
     }
 
     .home-text h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .home-text p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 300;
 
     }
@@ -770,10 +759,10 @@ header.scrolled {
     }
 
     .about-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .heading h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 }
