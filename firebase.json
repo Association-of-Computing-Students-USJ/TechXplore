@@ -5,4 +5,28 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   }
-}
+{
+    "hosting": [
+      {
+        "target": "techxplore-acsusj",
+        "public": "dist",
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+    ],
+    "firestore": {
+      "database": "(default)",
+      "location": "asia-southeast1",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    }
+  }
